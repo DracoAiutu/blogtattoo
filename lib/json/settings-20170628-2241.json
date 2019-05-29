@@ -1,0 +1,212 @@
+{
+	"use_menu": {
+		"status": "inactive",
+		"name": "Use Menu",
+		"desc": "Which menu style would you like to use?",
+		"type": "select",
+		"value": "overlay",
+		"options": [
+			"overlay",
+			"sidebar"
+		]
+	},
+	"use_select_menu": {
+		"status": "inactive",
+		"name": "use_select_menu",
+		"desc": "Description_goes_here",
+		"type": "boolean",
+		"value": false
+	},
+	"use_side_menu": {
+		"status": "inactive",
+		"name": "use_side_menu",
+		"desc": "Description_goes_here",
+		"type": "boolean",
+		"value": false
+	},
+	"show_icons": {
+		"status": "active",
+		"name": "show_icons",
+		"desc": "Description_goes_here",
+		"type": "boolean",
+		"value": true
+	},
+	"set_language": {
+		"status": "inactive",
+		"name": "set_language",
+		"desc": "Description_goes_here",
+		"type": "select",
+		"value": "en",
+		"options": [
+			"auto",
+			"en",
+			"es",
+			"ro",
+			"fr",
+			"po",
+			"jp",
+			"cr",
+			"it"
+		]
+	},
+	"use_theme": {
+		"status": "inactive",
+		"name": "use_theme",
+		"desc": "Description_goes_here",
+		"type": "select",
+		"value": "dark",
+		"options": [
+			"dark",
+			"blue",
+			"default"
+		]
+	},
+	"square_images": {
+		"status": "active",
+		"name": "Squared images",
+		"desc": "Show images in square containers in galleries",
+		"type": "boolean",
+		"value": true
+	},
+	"rounded_images": {
+		"status": "active",
+		"name": "Rounded images",
+		"desc": "Add round borders to all images",
+		"type": "boolean",
+		"value": false
+	},
+	"max_thumbnails": {
+		"status": "inactive",
+		"name": "max_thumbnails",
+		"desc": "Description_goes_here",
+		"type": "hidden",
+		"value": "6"
+	},
+	"thumbnail_quality": {
+		"status": "active",
+		"name": "thumbnail_quality",
+		"desc": "Quality of thumbnail represented as percentage of compression",
+		"type": "select",
+		"value": 70,
+		"options": [
+			5,
+			10,
+			15,
+			20,
+			25,
+			30,
+			35,
+			40,
+			45,
+			50,
+			55,
+			60,
+			65,
+			70,
+			75,
+			80,
+			85,
+			90,
+			95,
+			100
+		]
+	},
+	"large_image_quality": {
+		"status": "active",
+		"name": "large_image_quality",
+		"desc": "Quality of images represented as percentage of image compression",
+		"type": "select",
+		"value": 80,
+		"options": [
+			5,
+			10,
+			15,
+			20,
+			25,
+			30,
+			35,
+			40,
+			45,
+			50,
+			55,
+			60,
+			65,
+			70,
+			75,
+			80,
+			85,
+			90,
+			95,
+			100
+		]
+	},
+	"gallery_title": {
+		"status": "active",
+		"name": "gallery_title",
+		"desc": "Description_goes_here",
+		"type": "text",
+		"value": ""
+	},
+	"gallery_default": {
+		"status": "active",
+		"name": "Default Gallery",
+		"desc": "Gallery to be selected by default.",
+		"type": "galleries"
+	},
+	"gallery_footer": {
+		"status": "inactive",
+		"name": "Gallery Footer",
+		"desc": "Content of the footer. Accepts basic html.",
+		"type": "textarea",
+		"value": "Powered by <a href=\"http://minishowcase.net\" target=\"_blank\">minishowcase</a>"
+	},
+	"gallery_name_prepend": {
+		"status": "inactive",
+		"name": "Prepend to Gallery Name",
+		"desc": "Text to be added before the gallery name",
+		"type": "text",
+		"value": "my"
+	},
+	"gallery_name_append": {
+		"status": "inactive",
+		"name": "Append to Gallery Name",
+		"desc": "Text to be added after the gallery name",
+		"type": "text",
+		"value": "pictures"
+	},
+	"show_thumb_name": {
+		"status": "inactive",
+		"name": "Show thumbnail name",
+		"desc": "Description_goes_here",
+		"type": "hidden",
+		"value": true
+	},
+	"slideshow_seconds": {
+		"status": "hidden",
+		"name": "Slideshow Seconds",
+		"desc": "Time between slides for the slideshow (in seconds)",
+		"type": "text",
+		"value": 10
+	},
+	"hidden_files": {
+		"status": "hidden",
+		"name": "hidden_files",
+		"desc": "List of filenames to be ignored in gallery folders. Separate filenames with a comma (,)",
+		"type": "textarea",
+		"value": "Thumbs.db, .DS_Store"
+	},
+	"allowed_extensions": {
+		"status": "hidden",
+		"name": "Allowed Extensions",
+		"desc": "Image extensions to be allowed for gallery images. Separate with a comma (,)",
+		"type": "textarea",
+		"value": "jpg, jpeg, png, gif"
+	},
+	"debug": {
+		"status": "active",
+		"name": "Debug minishowcase",
+		"desc": "Check this to get more information for debugging issues",
+		"type": "boolean",
+		"value": true
+	}
+}

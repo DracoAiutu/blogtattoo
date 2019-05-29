@@ -1,0 +1,428 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../font/openSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../font/openSans/OpenSans-SemiBold.ttf);
+    font-weight: bold;
+}
+
+* {
+  margin: 0;
+  font-family: 'Open Sans';
+   padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.toolbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  justify-content: center;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.menu-button {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: fixed;
+  left: 16px;
+  top: 10px;
+  cursor: pointer;
+  justify-content: center;
+  transition: background-color .1s;
+}
+
+.menu-button:hover {
+  background-color: rgba(0,0,0,.05);
+}
+
+.menu {
+  width: calc(350px - 64px);
+  height: 100vh;
+  padding: 0 32px;
+  z-index: 1;
+  position: fixed;
+  left: -350px;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+.gallery-container {
+  width: 100%;
+  position: relative;
+  background: #333;
+}
+  @media (min-width: 480px) {
+      .gallery-container {
+        width: 800px;
+        margin: auto;
+      }
+  }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 30%;
+  margin-left:35%;
+  height: 35%;
+  margin-top: 7px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.imgslide {
+  width: 100%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .numbertext {
+    top: 15px;
+  }
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.pelicula {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0,0,0,.5);
+}
+
+.filter-title {
+  display: flex;
+  height: 60px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  align-items: center;
+  color: #455a64;
+}
+
+.filter {
+  display: none;
+  margin-bottom: 32px;
+}
+
+.filter > .title {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.filter > .title > p {
+  font-size: 14px;
+  color: #0000008a;
+}
+
+.filter .info {
+  display: flex;
+  width: 19px;
+  height: 19px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.filter .info i {
+  font-size: 15px;
+  color: #0000008a;
+}
+
+.campus-chips {
+  margin-bottom: 32px;
+  user-select: none;
+}
+
+.campus-chips p {
+  display: inline-block;
+  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 25px;
+  color: white;
+  background-color: rgba(70, 128, 255, .8);
+  cursor: pointer;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.disable {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.areas-select > div {
+  margin-bottom: 8px;
+}
+
+.container {
+  width: calc(100% - 32px);
+  margin-top: 60px;
+  padding: 16px;
+}
+.numbers, .textocapa {
+  display: flex;
+}
+
+.numbers > div, .textocapa > div {
+  width: 100%;
+  margin: 16px;
+  padding: 32px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+}
+
+.numbers > div > div , .textocapa > div > div {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.numbers img, .textocapa img {
+  width: 35px;
+  height: 35px;
+  margin-right: 32px;
+}
+
+.numbers h2, .textocapa h2 {
+  width: 100%;
+  text-align: right;
+  font-size: 24px;
+  color: #455a64;
+}
+
+.numbers p, .textocapa p {
+  text-align: right;
+  font-size: 14px;
+  color: #99abb4;
+}
+
+
+.textocapa > div {
+  cursor: no-drop !important;
+}
+
+.textocapa img {
+  margin-top: -2%;
+}
+
+.textocapa h2 {
+  font-size: 28px !important;
+}
+
+.textocapa h3 {
+  width: 100%;
+  text-align: right;
+  font-size: 24px;
+  color: #455a64;
+}
+.textocapa p {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+
+ /*Tooltip text */
+.tooltip .tooltiptext, .tooltipCard .tooltiptextCard {
+    visibility: hidden ;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+     /*Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -105px;
+
+     /*Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltiptextCard{
+    margin-left: -50px !important;
+    width: 300px !important;
+
+}
+
+ /*Tooltip arrow */
+.tooltip .tooltiptext::after, .tooltipCard .tooltiptextCard::after  {
+    content: "";
+    position: absolute ;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+ /*Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext, .tooltipCard:hover .tooltiptextCard {
+    visibility: visible ;
+    opacity: 1;
+}
+
+.partnerLogo {
+  color-fill: red;
+}
+
+.graphs {
+  width: 100%;
+  user-select: none;
+}
+
+.graph {
+  display: inline-block;
+  width: calc(50% - 99px);
+  padding: 32px;
+  margin: 16px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.graph > div {
+  height: 500px;
+}
+
+.graph > h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #455a64;
+  margin-bottom: 32px;
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 35px;
+  margin-top: -17.5px;
+  margin-left: -17.5px;
+  border-radius: 50%;
+  border-top: 2px solid #07d;
+  border-right: 2px solid transparent;
+  animation: spinner .6s linear infinite;
+}
+
+.rodape{
+  height: 70px;
+  background-color: white;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.copyright{
+  color: #777;
+  margin-left: 30px;
+}
+
+@media (max-width: 1110px) {
+  .numbers {
+    flex-wrap: wrap;
+  }
+
+  .graph {
+    width: calc(100% - 100px);
+  }
+}
