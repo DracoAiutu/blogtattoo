@@ -84,9 +84,9 @@ body {
 /* Hide the images by default */
 .mySlides {
   display: none;
-  width: 30%;
-  margin-left:35%;
-  height: 35%;
+  width: 49%;
+  margin-left:25%;
+  height: 38%;
   margin-top: 7px;
 }
 
@@ -359,31 +359,6 @@ body {
   color-fill: red;
 }
 
-.graphs {
-  width: 100%;
-  user-select: none;
-}
-
-.graph {
-  display: inline-block;
-  width: calc(50% - 99px);
-  padding: 32px;
-  margin: 16px;
-  border-radius: 5px;
-  background-color: white;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-}
-
-.graph > div {
-  height: 500px;
-}
-
-.graph > h4 {
-  font-size: 18px;
-  font-weight: 500;
-  color: #455a64;
-  margin-bottom: 32px;
-}
 
 @keyframes spinner {
   to {transform: rotate(360deg);}
